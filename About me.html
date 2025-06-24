@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Me – Multimedia</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: white;
+      margin: 30px 70px;
+      background-image: url('images/fondo.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+h1 {
+  font-size: 2.5em;
+}
+     h2, h3, p, li {
+      font-size: 1.1em;
+    }
+
+    .content-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      max-width: 1200px;
+    }
+
+        .lists-row {
+      display: flex;
+      gap: 40px;
+      margin-bottom: 20px;
+    }
+
+    .lists-row > div {
+      flex: 1;
+    }
+
+    .image-gallery {
+      display: flex !important; 
+      gap: 10px;
+      flex-wrap: nowrap; 
+      overflow-x: auto; 
+    }
+
+    .image-gallery img {
+      width: 150px;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 6px;
+      flex-shrink: 0; 
+    }
+
+    .media-column video,
+    .media-column iframe {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .audio-player {
+      background-color: #F66F8E;
+      padding: 10px;
+      border-radius: 12px;
+      display: inline-block;
+    }
+
+    a {
+      color: #F66F8E;
+      text-decoration: none;
+    }
+
+    img.main-image {
+      width: 300px;
+      height: auto;
+      margin-bottom: 5px;
+    }
+
+    blockquote {
+      margin-bottom: 5px;
+      max-width: 600px;
+    }
+  </style>
+</head>
+<body>
+
+  <a href="index.html">← Come back to the previous website</a>
+
+  <h1>About me</h1> 
+
+  <div class="content-wrapper">
+    
+    <div style="flex: 1 1 300px;">
+      <h2>This is me</h2>
+      <div style="text-align: center; margin-bottom: 5px;">
+        <img class="main-image" src="images/Id_picture.jpg" alt="ID Picture">
+      </div>
+
+      
+      <div class="lists-row">
+        <div>
+          <h3>Music I Listen To</h3>
+          <ul>
+            <li>Indie Rock</li>
+            <li>Spanish Rap</li>
+            <li>Punk</li>
+          </ul>
+        </div>
+        <div>
+          <h3>My Favorite Movies</h3>
+          <ol>
+            <li>Lalaland</li>
+            <li>Gone Girl</li>
+            <li>Medianeras</li>
+          </ol>
+        </div>
+      </div>
+
+      <blockquote>
+        <p><strong>Hello!</strong> I’m <em>Sara Garcia</em>, a Graphic Design student currently on Erasmus.
+          Some of my interests include rock climbing, painting, and spending time with friends outside.
+          I love watching movies, especially drama, and reading novels.
+          One of my favorite books is <em>Normal People</em> by Sally Rooney.
+        </p>
+      </blockquote>
+
+      <div class="image-gallery">
+        <img src="images/picture_1.jpg" alt="Gallery 1">
+        <img src="images/picture_2.jpg" alt="Gallery 2">
+        <img src="images/picture_3.jpg" alt="Gallery 3">
+        <img src="images/picture_4.jpg" alt="Gallery 4">
+      </div>
+    </div>
+
+    
+    <div class="media-column" style="flex: 1 1 300px;">
+      <h2>Local Video</h2>
+      <video controls>
+        <source src="media/cat video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
+      <h2>YouTube Video</h2>
+      <iframe width="100%" height="250" 
+        src="https://www.youtube.com/embed/7zTJUpykIwc"
+        title="YouTube video" 
+        frameborder="0" 
+        allowfullscreen>
+      </iframe>
+
+      <h2>My Favorite Song</h2>
+      <div class="audio-player">
+        <audio controls>
+          <source src="media/song.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+
+      <h3><a href="media/revista.pdf" target="_blank">PDF to my Magazine</a></h3>
+    </div>
+  </div>
+
+</body>
+</html>
